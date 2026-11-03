@@ -1,0 +1,19 @@
+{application, thinwrap_notifications, [
+    {description,
+        "Unified, SDK-free, zero-dependency wrapper for sending email, SMS, push and chat "
+        "across 35 providers behind one normalized surface."},
+    {vsn, "1.2.0"},
+    {registered, []},
+    %% inets + ssl back the default httpc transport; crypto backs SigV4 (SES/SNS)
+    %% and JWT signing (FCM/APNs). A caller who injects their own transport still
+    %% gets them started, which is harmless.
+    {applications, [kernel, stdlib, crypto, inets, ssl, public_key]},
+    {env, []},
+    {modules, []},
+    {licenses, ["MIT"]},
+    {links, [
+        {"GitHub", "https://github.com/thinwrap/notifications-erl"},
+        {"Changelog", "https://github.com/thinwrap/notifications-erl/blob/main/CHANGELOG.md"},
+        {"Website", "https://thinwrap.dev"}
+    ]}
+]}.
