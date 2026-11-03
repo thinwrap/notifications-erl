@@ -62,7 +62,7 @@ Config keys are the provider's credential and setting names (`api_key`,
 `account_sid`, `webhook_url`, `from`, …). Any credential may be a binary or a
 zero-arity fun returning one, which keeps the secret out of crash reports that
 print the config. Per-provider details (endpoint, auth, config keys, error
-mapping, passthrough keys) live in [`docs/providers/`](docs/providers/).
+mapping, passthrough keys) live in [`docs/providers/`](https://github.com/thinwrap/notifications-erl/tree/main/docs/providers).
 
 ## Switching providers
 
